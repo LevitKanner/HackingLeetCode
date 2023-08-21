@@ -24,7 +24,6 @@ You're welcome to explore this repository in any way that suits your needs:
 
 - **Learning**: If you're new to a specific problem, read the problem statement and explanation to gain insight into the approach.
 - **Review**: If you're familiar with the problem, you can quickly review the solution and refresh your memory.
-- **Comparing Languages**: If you're interested in seeing how the same problem can be solved in different languages, this repository offers solutions in multiple programming languages.
 - **Contributing**: If you'd like to contribute your solution or improvements to an existing one, feel free to create a pull request. Please ensure that your solution is well-documented and efficient.
 
 ## Contribution Guidelines
