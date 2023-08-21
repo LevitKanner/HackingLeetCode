@@ -1,8 +1,6 @@
-# LeetCode Solutions Repository
+# HackingLeetcode
 
-![LeetCode Logo](https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png)
-
-Welcome to my LeetCode solutions repository! This repository contains my solutions to various LeetCode problems. As I've worked through these problems, I've aimed to provide clear and well-documented solutions using the C# programming languages. Whether you're a fellow programmer, a LeetCode enthusiast, or just looking for some coding inspiration, I hope you find value in this collection.
+Welcome to my hacking leetcode repo! This repository contains my solutions to various LeetCode problems. As I've worked through these problems, I've aimed to provide clear and well-documented solutions using the C# programming languages. Whether you're a fellow programmer, a LeetCode enthusiast, or just looking for some coding inspiration, I hope you find value in this collection.
 
 ## About LeetCode
 
