@@ -1,4 +1,4 @@
-namespace Leetcode;
+namespace Leetcode.ValidAnagram;
 
 /// <summary>
 /// <see href="https://leetcode.com/problems/valid-anagram/description/"/>

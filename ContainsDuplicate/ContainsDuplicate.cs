@@ -1,4 +1,4 @@
-namespace Leetcode;
+namespace Leetcode.ContainsDuplicate;
 
 public static class ContainsDuplicate
 {

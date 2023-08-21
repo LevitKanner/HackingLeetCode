@@ -1,4 +1,4 @@
-namespace Leetcode;
+namespace Leetcode.TwoSum;
 
 public static class TwoSum
 {
