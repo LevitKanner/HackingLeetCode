@@ -10,11 +10,9 @@ Welcome to my hacking leetcode repo! This repository contains my solutions to va
 
 This repository is organized by problem categories and is meant to be user-friendly. Each problem solution is presented in its own folder, labeled with the problem number and title. Inside each folder, you will find the following:
 
-1. **Problem Statement**: A brief description of the problem statement sourced from LeetCode.
-2. **Solution**: Well-commented code that provides an efficient and correct solution to the problem.
-3. **Explanation**: An explanation of the thought process behind the solution, outlining the algorithm's approach and any key insights.
-4. **Complexity Analysis**: Discussion of the time and space complexity of the solution.
-5. **Language**: C#.
+1. **Solution**: Well-commented code that provides an efficient and correct solution to the problem.
+2. **Explanation**: An explanation of the thought process behind the solution, outlining the algorithm's approach and any key insights.
+3. **Language**: C#.
 
 ## How to Use This Repository
 
