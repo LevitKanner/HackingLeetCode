@@ -1,17 +1,17 @@
-namespace Leetcode.IsSubstring;
+namespace Leetcode.IsSubsequence;
 
 public static class IsSubsequence
 {
     public static bool Run(string s, string t)
     {
         if (s.Length > t.Length) return false;
-        if (s == t) return true;
+        if (s == t || s == "") return true;
 
 
         var sequences = 0;
-        for (var i = 0; i < t.Length; i++)
+        foreach (var character in t)
         {
-            if (s[sequences] == t[i])
+            if (sequences < s.Length && s[sequences] == character)
             {
                 sequences++;
             }
