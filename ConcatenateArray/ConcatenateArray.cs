@@ -6,9 +6,7 @@ public static class GetConcatenation
     {
         var result = new int[nums.Length * 2];
 
-        for (var i = 0; i < nums.Length * 2; i++) {
-            result[i] = nums[ i % nums.Length];
-        }
+        for (var i = 0; i < nums.Length * 2; i++) result[i] = nums[i % nums.Length];
         return result;
     }
 }

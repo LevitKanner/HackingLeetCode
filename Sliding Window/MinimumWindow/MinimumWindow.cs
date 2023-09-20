@@ -5,10 +5,7 @@ public static class MinimumWindow
     public static string Run(string s, string t)
     {
         Dictionary<char, int> tMap = new();
-        foreach (var character in t)
-        {
-            AddToDictionary(tMap, character);
-        }
+        foreach (var character in t) AddToDictionary(tMap, character);
 
         var need = tMap.Count;
 
@@ -22,14 +19,11 @@ public static class MinimumWindow
             var currentCharacter = s[r];
             AddToDictionary(window, currentCharacter);
 
-            if (tMap.TryGetValue(currentCharacter, out var value) && value == window[currentCharacter])
-            {
-                have++;
-            }
+            if (tMap.TryGetValue(currentCharacter, out var value) && value == window[currentCharacter]) have++;
 
             while (have == need)
             {
-                var windowLength = (r - l) + 1;
+                var windowLength = r - l + 1;
                 if (windowLength < resultLength)
                 {
                     resultLength = windowLength;
@@ -37,10 +31,7 @@ public static class MinimumWindow
                 }
 
                 window[s[l]]--;
-                if (tMap.TryGetValue(s[l], out var count) && count < tMap[s[l]])
-                {
-                    have--;
-                }
+                if (tMap.TryGetValue(s[l], out var count) && count < tMap[s[l]]) have--;
 
                 l++;
             }
@@ -52,12 +43,8 @@ public static class MinimumWindow
     private static void AddToDictionary(IDictionary<char, int> map, char character)
     {
         if (map.TryGetValue(character, out var value))
-        {
             map[character] = ++value;
-        }
         else
-        {
             map.Add(character, 1);
-        }
     }
 }

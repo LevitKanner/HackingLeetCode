@@ -10,12 +10,8 @@ public static class IsSubsequence
 
         var sequences = 0;
         foreach (var character in t)
-        {
             if (sequences < s.Length && s[sequences] == character)
-            {
                 sequences++;
-            }
-        }
 
         return sequences == s.Length;
     }

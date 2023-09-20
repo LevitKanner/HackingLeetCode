@@ -17,20 +17,14 @@ public static class ReorganiseString
         }
 
         PriorityQueue<(char, int), int> heap = new();
-        foreach (var entry in characterCounts)
-        {
-            heap.Enqueue((entry.Key, -entry.Value), -entry.Value);
-        }
+        foreach (var entry in characterCounts) heap.Enqueue((entry.Key, -entry.Value), -entry.Value);
 
         var result = "";
         (char, int)? mostRecent = null;
 
         while (heap.Count > 0 || mostRecent is not null)
         {
-            if (heap.Count == 0 && mostRecent is not null)
-            {
-                return "";
-            }
+            if (heap.Count == 0 && mostRecent is not null) return "";
 
             var currentItem = heap.Dequeue();
             result += currentItem.Item1;
@@ -42,11 +36,7 @@ public static class ReorganiseString
                 mostRecent = null;
             }
 
-            if (currentItem.Item2 != 0)
-            {
-                mostRecent = currentItem;
-            }
-            
+            if (currentItem.Item2 != 0) mostRecent = currentItem;
         }
 
         return result;

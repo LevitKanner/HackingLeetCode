@@ -10,10 +10,7 @@ public static class LongestConsecutive
         {
             if (unique.Contains(nums[i] - 1)) continue;
             var longest = 0;
-            while (unique.Contains(nums[i] + longest))
-            {
-                longest++;
-            }
+            while (unique.Contains(nums[i] + longest)) longest++;
 
             if (longest > result) result = longest;
         }

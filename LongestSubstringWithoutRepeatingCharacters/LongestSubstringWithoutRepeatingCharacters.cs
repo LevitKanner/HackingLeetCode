@@ -10,7 +10,6 @@ public static class LongestSubstringWithoutRepeatingCharacters
         HashSet<char> memory = new();
 
         while (r < s.Length)
-        {
             if (!memory.Contains(s[r]))
             {
                 memory.Add(s[r]);
@@ -22,7 +21,6 @@ public static class LongestSubstringWithoutRepeatingCharacters
                 memory.Remove(s[l]);
                 l++;
             }
-        }
 
         return result;
     }

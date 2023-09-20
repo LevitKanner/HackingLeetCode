@@ -9,13 +9,9 @@ public static class GroupAnagrams
         {
             var orderedWord = string.Concat(word.Order());
             if (groups.TryGetValue(orderedWord, out var value))
-            {
                 value.Add(word);
-            }
             else
-            {
                 groups[orderedWord] = new List<string> { word };
-            }
         }
 
         return groups.Values.ToList();

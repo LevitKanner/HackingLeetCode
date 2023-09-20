@@ -22,10 +22,7 @@ public static class ValidPalindrome
                 continue;
             }
 
-            if (lowercased[i] != lowercased[j])
-            {
-                return false;
-            }
+            if (lowercased[i] != lowercased[j]) return false;
 
             i++;
             j--;
